@@ -27,10 +27,11 @@ export default {
   method: 'POST',
   path: '/api/users',
   config: {
-    auth: {
-      strategy: 'jwt',
-      scope: ['admin']
-    },
+    // auth: {                  // only admin can create new user. for testing purpose just set auth: false to create new user.
+    //   strategy: 'jwt',
+    //   scope: ['admin']                           
+    // },
+     auth: false,
     // Before the route handler runs, verify that the user is unique
     pre: [
       { method: verifyUniqueUser.verifyUniqueUser }
@@ -38,6 +39,7 @@ export default {
     handler: (req, res) => {
 
       let user = new User;
+      //const { email, username, password } = req.payload;  // this line is legit ES6. so e.g: user.email = email, instead of req.payload.email
       user.email = req.payload.email;
       user.username = req.payload.username;
       user.admin = false;
