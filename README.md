@@ -13,4 +13,5 @@ This project is just for the purpose of learning Hapijs, JWT and ES6 syntax. The
 <code>const Hapi = require('hapi')</code> to <code>import Hapi from 'hapi'</code>. Hope this help and feel free to improve the codes (especially the ES6 syntax), as I am still new to these technology.
 
 09-Feb-2017: Add logging utility for server using <code>Good</code>
+<br /><br />
 09-Feb-2017: Add <code>Mongoose.Promise = global.Promise</code> before <code>Mongoose.connect</code> but still got this message: (node:5056) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html when adding new user.
