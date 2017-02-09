@@ -1,11 +1,5 @@
 'use strict';
 
-// const bcrypt = require('bcryptjs');
-// const Boom = require('boom');
-// const User = require('../model/User');
-// const checkUserSchema = require('../schemas/checkUser');
-// const verifyUniqueUser = require('../util/userFunctions').verifyUniqueUser;
-
 import bcrypt from 'bcryptjs';
 import Boom from 'boom';
 import User from '../model/User';

@@ -1,10 +1,5 @@
 'use strict';
 
-// const Boom = require('boom');
-// const User = require('../model/User');
-// const updateUserSchema = require('../schemas/updateUser');
-// const verifyUniqueUser = require('../util/userFunctions').verifyUniqueUser;
-
 import Boom from 'boom';
 import { User } from '../model/User';
 import updateUserSchema from '../schemas/updateUser';

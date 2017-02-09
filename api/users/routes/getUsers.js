@@ -1,8 +1,5 @@
 'use strict';
 
-// const User = require('../model/User');
-// const Boom = require('boom');
-
 import { User } from '../model/User';
 import Boom from 'boom';
 
