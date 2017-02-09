@@ -14,10 +14,12 @@ const verifyUniqueUser = (req, res) => {
     if(user) {
       if(user.username === req.payload.username) {
         res(Boom.badRequest('Username taken!'));
+        return;
       }
 
       if(user.email === req.payload.email) {  
         res(Boom.badRequest('Email taken!'));
+        return;
       }
     }
 

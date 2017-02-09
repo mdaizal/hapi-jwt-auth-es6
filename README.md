@@ -15,3 +15,5 @@ This project is just for the purpose of learning Hapijs, JWT and ES6 syntax. The
 09-Feb-2017: Add logging utility for server using <code>Good</code>
 <br /><br />
 09-Feb-2017: Add <code>Mongoose.Promise = global.Promise</code> before <code>Mongoose.connect</code> but still got this message: (node:5056) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html when adding new user.
+<br /><br />
+09-Feb-2017: Missing <code>return;</code> in <code>util/userFunctions.js</code>
