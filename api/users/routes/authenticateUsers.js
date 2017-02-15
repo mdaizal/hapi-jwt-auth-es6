@@ -10,6 +10,9 @@ export default {
   method: 'POST',
   path: '/api/users/authenticate',
   config: {
+    cors: {
+      origin: ['http://localhost:3001/*']
+    },
     auth: false,
     pre: [
       { method: verifyCredentials.verifyCredentials, assign: 'user' }
