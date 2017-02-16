@@ -24,9 +24,10 @@ export default {
     },
     // Add authentication to this route
     // The user must have a scope of `admin`
-    auth: {
-      strategy: 'jwt',
-      scope: ['admin']
-    }
+    auth: false
+    // auth: {
+    //   strategy: 'jwt',
+    //   scope: ['admin']
+    // }
   }
 }
