@@ -7,6 +7,9 @@ export default {
   method: 'GET',
   path: '/api/users',
   config: {
+    cors:{
+      origin: ['http://localhost:3001']
+    },
     handler: (req, res) => {
       User
         .find()

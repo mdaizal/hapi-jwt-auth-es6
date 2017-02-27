@@ -11,7 +11,7 @@ export default {
   path: '/api/users/authenticate',
   config: {
     cors: {
-      origin: ['http://localhost:3001/*']
+      origin: ['http://localhost:3002']
     },
     auth: false,
     pre: [

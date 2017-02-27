@@ -16,7 +16,7 @@ const createToken = (user) => {
               Secret,
               { algorithm: 'HS256', expiresIn: '1h'}
             ),
-     username: user.username
+     id: user._id
     }
   );
 }

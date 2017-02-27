@@ -29,7 +29,7 @@ const verifyUniqueUser = (req, res) => {
 
 const verifyCredentials = (req, res) => {
   const password = req.payload.password;
-
+  
   User.findOne({
     $or: [
       { email: req.payload.email },
