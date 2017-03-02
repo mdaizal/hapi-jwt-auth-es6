@@ -10,7 +10,7 @@ import { Secret } from './config';
 import Good from 'good';
 
 const server = new Hapi.Server();
-server.connection({ port:3001 });
+server.connection({ port:3003 });
 
 const dbUrl = 'mongodb://localhost:27017/hapi-app';
 
