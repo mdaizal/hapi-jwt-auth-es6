@@ -1,3 +1,8 @@
+'use strict'
+
+import boom from 'boom'
+import { Counter } from '../model/Counter'
+
 export default{
   method: 'GET',
   path: '/api/counter',
@@ -6,6 +11,11 @@ export default{
     cors: true
   },
   handler: (req, res) => {
-    res({ start: 10 })
+    Counter.find({}, (err, result) => {
+      if(err) {
+        throw boom.badRequest(err)
+      }
+      res(result)
+    })
   }
 }
